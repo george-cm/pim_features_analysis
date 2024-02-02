@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "pim-features-analysis"
+version = "0.1.0"
+description = ""
+authors = ["George Murga <george.murga+github@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.0"
+mypy = "^1.8.0"
+poetry = "^1.7.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pim_features_analysis = "pim_features_analysis:main"
+
+[tool.ruff.isort]
+force-single-line = true
+
+[tool.isort]
+force_single_line = true

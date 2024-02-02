@@ -1,0 +1,5 @@
+*.csv
+dist
+build
+.mypy_cache
+.pytest_cache
