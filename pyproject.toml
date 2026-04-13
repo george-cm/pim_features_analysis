@@ -16,7 +16,7 @@ poetry = "^1.7.1"
 pyinstaller = "^6.4.0"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^8.0.0"
+pytest = ">=8,<10"
 
 [build-system]
 requires = ["poetry-core"]
